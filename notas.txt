@@ -1,0 +1,19 @@
+- Paradigma de prog funcional
+
+*Funcion de primer orden: es una funcion que puede ser tratada como una variable, puede almacenar una funcion o puede ser enviada como parametro en otras funciones
+
+*Funcion de orden superior: es toda funcion que puede recibir en parametros funciones (incluyendo funciones de primer orden)
+
+-Patron de diseño creacional:
+
+*Singleton: Provee una técnica para crear objetos. Se utiliza cuando la persistencia de la información del objeto no cambia, ejem: calendario, dias de la semana, etc. Asegura que una clase tenga una única instancia
+
+-Patron de comportamiento:
+
+*Strategy: Permite añadir nuevos comportamientos a los objetos sin modificar el contexto inicial
+
+*Observer: Se basa en enviar notificaciones cuando el estado del objeto cambie. Principalmente, se compone de un Subject (es quien envia las notificaciones) y un Observer (es quien se suscribe al subject, este le envia una notificacion y el observer realiza una accion dependiendo de la misma)
+
+Notas: 
+*El contexto (en patrones de diseño): es el objeto central que unificará las cosas, a partir de aquí se creará el objeto
+*JS es multiparadigma
