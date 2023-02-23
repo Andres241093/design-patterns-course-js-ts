@@ -14,6 +14,10 @@
 
 *Observer: Se basa en enviar notificaciones cuando el estado del objeto cambie. Principalmente, se compone de un Subject (es quien envia las notificaciones) y un Observer (es quien se suscribe al subject, este le envia una notificacion y el observer realiza una accion dependiendo de la misma)
 
+-Patron de diseño estructurales:
+
+*Decorador: se utiliza cuando se necesita añadir nuevas funcionalidades a un conjunto de clases
+
 Notas: 
 *El contexto (en patrones de diseño): es el objeto central que unificará las cosas, a partir de aquí se creará el objeto
 *JS es multiparadigma
