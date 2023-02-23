@@ -7,6 +7,7 @@
 -Patron de diseño creacional:
 
 *Singleton: Provee una técnica para crear objetos. Se utiliza cuando la persistencia de la información del objeto no cambia, ejem: calendario, dias de la semana, etc. Asegura que una clase tenga una única instancia
+*Builder: Provee una técnica para crear objetos cuyo constructor reciba muchos parámetros. Permitiendo crear objetos completos de manera sencilla.
 
 -Patron de comportamiento:
 
