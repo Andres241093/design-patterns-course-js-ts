@@ -15,6 +15,8 @@
 
 *Observer: Se basa en enviar notificaciones cuando el estado del objeto cambie. Principalmente, se compone de un Subject (es quien envia las notificaciones) y un Observer (es quien se suscribe al subject, este le envia una notificacion y el observer realiza una accion dependiendo de la misma)
 
+*State: Se basa en un contexto el cual dependiendo de su estado, cambia su comportamiento. Se diferencia del patron strategy porque puede compartir conocimiento con clases que nacen de sus estados y estas a su vez pueden cambiar de estado al objeto principal.
+
 -Patron de diseño estructurales:
 
 *Decorador: se utiliza cuando se necesita añadir nuevas funcionalidades a un conjunto de clases

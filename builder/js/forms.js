@@ -84,6 +84,29 @@
     }
  }
 
+ class FormDirector {
+    constructor(formBuilder){
+        this.setBuilder(formBuilder);
+    }
+
+    setBuilder(formBuilder){
+        this.formBuilder = formBuilder;
+    }
+
+    createFormPeople() {
+        this.formBuilder.reset();
+        this.formBuilder.setText("firstName","Nombre")
+                        .setText("lastName","Apellido");
+    }
+
+    createContactForm() {
+        this.formBuilder.reset();
+        this.formBuilder.setText("name","Nombre del interesado")
+                        .setText("email","Correo")
+                        .setText("message","Mensaje");
+    }
+ }
+
  const formBuilder = new FormBuilder();
  const formPeople = formBuilder.setAction('add.php')
                                 .setText('firstName', 'Nombre')
@@ -101,3 +124,13 @@ const formMail = formBuilder.setAction('send.php')
                             .build();
                             
 form2.innerHTML = formMail.getContent();
+
+const director = new FormDirector(formBuilder);
+director.createFormPeople();
+form3.innerHTML = formBuilder.build().getContent();
+
+director.createFormPeople();
+form4.innerHTML = formBuilder.build().getContent();
+
+director.createContactForm();
+form5.innerHTML = formBuilder.build().getContent();
