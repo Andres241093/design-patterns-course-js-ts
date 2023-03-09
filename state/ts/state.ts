@@ -40,7 +40,7 @@ class EmptyState implements State {
         return null;
     }
     add(ticket: Ticket, quantity: number): void {
-        if((quantity < ticket.limit){
+        if((quantity < ticket.limit)){
             ticket.quantity = quantity;
         } 
     }
