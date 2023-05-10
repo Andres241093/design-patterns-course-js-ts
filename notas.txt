@@ -21,6 +21,8 @@
 
 *Decorador: se utiliza cuando se necesita añadir nuevas funcionalidades a un conjunto de clases
 
+*Bridge: Funciona como un puente, separando una implementación de una clase que va a hacer uso de dicha implementación.
+
 Notas: 
 *El contexto (en patrones de diseño): es el objeto central que unificará las cosas, a partir de aquí se creará el objeto
 *JS es multiparadigma
